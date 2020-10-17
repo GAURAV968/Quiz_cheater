@@ -22,7 +22,7 @@ for d in site_json['fields']:
         y=d.get('widgets')[0].get('options')
         for op in y:
         	option=option + ' ' +op.get('label')
-        query=ques+ " " + option
+        query="mcq"+ques+ " " + option
         for j in search(query, tld="com", lang='en', num=5,start=0, stop=5, pause=2):
             if(flag==1):
                 flag=0
