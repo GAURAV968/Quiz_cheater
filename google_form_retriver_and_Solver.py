@@ -6,7 +6,7 @@ import requests
 from googlesearch import search
 
 glink="https://docs.google.com/forms/d/e/1FAIpQLSfeqDpkBmcGq_vTVG9gYyn6g_DYfthu646vB8Y6c2KHy0xSow/viewform?usp=sf_link"
-#glinl=input("Enter the google form link")
+#glink=input("Enter the google form link")
 url='https://google-form-exporter.herokuapp.com/formdress?url='+glink
 
 html = request.urlopen(url).read()
